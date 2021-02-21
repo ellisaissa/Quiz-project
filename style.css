@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+    font-family: sans-serif
+}
+
+:root {
+    --hue-neutral:200;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width:100vw;
+    height: 100vh;
+    justify-content:center ;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.btn-grid {
+    display: : grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1 px solid;
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: blue;
+    outline:none;
+}
+.btn:hover{
+    border-color: black;
+}
+.start-btn, .next-btn {
+    font-size: 1rem;
+    font-weight:bold;
+    padding:10px 20px;
+}
+.controls {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
